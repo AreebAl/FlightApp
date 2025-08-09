@@ -40,11 +40,21 @@
 .bp-passenger .p-name { margin-top:8px; font-weight:700; }
 .bp-passenger .p-sub { color:#64748b; font-size: 13px; }
 
+/* Passenger row variant matching reference */
+.bp-passenger-row { display:flex; align-items:center; justify-content:space-between; gap:10px; padding: 10px 16px; }
+.bp-passenger-row .p-left { display:flex; align-items:center; gap:10px; }
+.bp-passenger-row .avatar { width:44px; height:44px; border-radius:50%; object-fit:cover; box-shadow:0 0 0 2px #fff, 0 0 0 3px #e2e8f0; }
+.bp-passenger-row .p-name { font-weight:700; }
+.bp-passenger-row .p-sub { color:#64748b; font-size: 13px; }
+.bp-passenger-row .p-seat { display:flex; align-items:center; gap:6px; color:#111827; font-weight:700; }
+
+/* Perforation divider */
+.bp-perforation { height: 1px; border-bottom: 1px dashed #d1dae6; margin: 0 16px; }
+
 /* Specs two columns */
-.bp-specs { display:grid; grid-template-columns: repeat(2, 1fr); gap: 12px 20px; padding: 12px 16px; }
-.bp-specs .item { display:grid; grid-template-columns: 1fr auto; align-items:center; }
-.bp-specs .label { color:#64748b; font-size: 13px; text-align:left; }
-.bp-specs .value { font-weight:700; text-align:right; }
+.bp-specs { display:grid; grid-template-columns: repeat(4, 1fr); gap: 8px; padding: 12px 16px; text-align:center; }
+.bp-specs .cell .value { font-weight:800; }
+.bp-specs .cell .label { color:#64748b; font-size: 12px; }
 
 /* QR bottom */
 .bp-qr { margin-top:auto; padding: 12px 16px 16px; text-align:center; }

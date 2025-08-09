@@ -42,20 +42,29 @@ function BoardingPass() {
           </div>
 
           {/* Passenger */}
-          <div className="bp-passenger">
-            <img className="avatar" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fd02135e-09b5-4063-989e-30b421116a55.png" alt="Dinakaran" />
-            <div className="p-name">Dinakaran</div>
-            <div className="p-sub">22 years</div>
-            <div className="p-sub">Male</div>
+          <div className="bp-passenger-row">
+            <div className="p-left">
+              <img className="avatar" src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fd02135e-09b5-4063-989e-30b421116a55.png" alt="Dinakaran" />
+              <div className="p-meta">
+                <div className="p-name">Dinakaran</div>
+                <div className="p-sub">22 years, Male</div>
+              </div>
+            </div>
+            <div className="p-seat" aria-label="Seat number">
+              <svg className="seat-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10v7a1 1 0 1 0 2 0v-7H7Zm6-3.168a3.53 3.53 0 0 0-4 0v1.168h4v-1.168ZM15 17v-7h-2v7a2 2 0 0 0 4 0v-7h-2Z" /></svg>
+              <span>17 D</span>
+            </div>
           </div>
+
+          {/* Perforation divider */}
+          <div className="bp-perforation" />
 
           {/* Flight specifics */}
           <div className="bp-specs">
-            <div className="item"><div className="label">Class</div><div className="value">Economy</div></div>
-            <div className="item"><div className="label">Gate</div><div className="value">4</div></div>
-            <div className="item"><div className="label">Terminal</div><div className="value">3</div></div>
-            <div className="item"><div className="label">Flight</div><div className="value">DJ017</div></div>
-            <div className="item"><div className="label">Seat</div><div className="value">17D</div></div>
+            <div className="cell"><div className="value">Economy</div><div className="label">Class</div></div>
+            <div className="cell"><div className="value">4</div><div className="label">Gate</div></div>
+            <div className="cell"><div className="value">3</div><div className="label">Terminal</div></div>
+            <div className="cell"><div className="value">DJ017</div><div className="label">Flight</div></div>
           </div>
 
           {/* QR */}
