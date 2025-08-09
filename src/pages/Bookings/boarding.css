@@ -1,0 +1,57 @@
+/* Boarding Pass - page scoped styles */
+
+/* Back button and header spacing */
+.back-btn { position:absolute; top:24px; left:24px; background: rgba(255,255,255,0.4); backdrop-filter: blur(8px); border-radius: 12px; width:38px; height:38px; display:flex; justify-content:center; align-items:center; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+.header { padding-top:68px; padding-bottom:10px; }
+
+/* Vertical ticket container */
+.bp-vertical {
+  width: 100%;
+  max-width: 420px;
+  /* Allow full vertical growth; enable page scroll if needed */
+  height: auto;
+  margin: 12px auto 20px auto;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 14px 36px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Header */
+.bp-header { display:flex; align-items:center; justify-content:space-between; padding: 12px 16px; background: linear-gradient(90deg, #f6fbff, #eef7ff); }
+.bp-header .ai-logo { width: 60px; height: auto; }
+.bp-header .airline { font-weight: 800; letter-spacing: 0.02em; }
+.bp-header .date { color:#334155; font-size: 13px; }
+
+/* Flight details stacked */
+.bp-flight { display:grid; grid-template-columns: 1fr auto 1fr; align-items:center; padding: 16px; gap: 10px; }
+.bp-flight .col { text-align:center; }
+.bp-flight .time { font-size: 28px; font-weight: 800; color:#0f172a; }
+.bp-flight .city { font-weight: 600; color:#334155; }
+.bp-flight .mid { display:flex; flex-direction:column; align-items:center; gap:6px; color:#64748b; }
+.bp-flight .mid .plane { font-size: 18px; }
+.bp-flight .mid .duration { font-size: 12px; }
+
+/* Passenger */
+.bp-passenger { display:flex; flex-direction:column; align-items:center; padding: 8px 16px; }
+.bp-passenger .avatar { width:64px; height:64px; border-radius:50%; object-fit:cover; box-shadow:0 0 0 2px #fff, 0 0 0 4px #e2e8f0; }
+.bp-passenger .p-name { margin-top:8px; font-weight:700; }
+.bp-passenger .p-sub { color:#64748b; font-size: 13px; }
+
+/* Specs two columns */
+.bp-specs { display:grid; grid-template-columns: repeat(2, 1fr); gap: 12px 20px; padding: 12px 16px; }
+.bp-specs .item { display:grid; grid-template-columns: 1fr auto; align-items:center; }
+.bp-specs .label { color:#64748b; font-size: 13px; text-align:left; }
+.bp-specs .value { font-weight:700; text-align:right; }
+
+/* QR bottom */
+.bp-qr { margin-top:auto; padding: 12px 16px 16px; text-align:center; }
+.bp-qr .qr-box { width: 200px; height: 200px; margin: 0 auto 8px auto; border-radius: 14px; background:#f9f8f7; box-shadow: inset 2px 2px 4px #ddd, inset -2px -2px 4px #fff; display:flex; align-items:center; justify-content:center; }
+.bp-qr .qr-box img { width: 100%; height: 100%; object-fit: cover; }
+.bp-qr .qr-label { color:#64748b; font-size: 13px; }
+
+/* Print button */
+.btn-print { background-color:#5FC9F8; color:#fff; border-radius:32px; font-weight:700; padding:12px 0; width:100%; max-width:500px; margin:12px auto 36px auto; cursor:pointer; text-align:center; box-shadow:0 4px 8px rgba(95,201,248,0.5); display:block; }
+
